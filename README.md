@@ -1,6 +1,9 @@
+<p align="center">
+	<img src="https://github.com/AbdullahAshraff/Numerical_Methods_ODE/assets/125521810/60559c74-0940-46dd-b1c0-5b9f2e08fe9b">
+</p>
+
 ODE Numerical Solver
 ===============
-
 This is a project to solve Ordinary differential equations using numerical methods:
 - Euler's Method
 - Midpoint Method
