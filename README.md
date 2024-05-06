@@ -35,10 +35,11 @@ This is a project to solve Ordinary differential equations using numerical metho
 ##			Example
 
 for the following problem
-
-> y' =  x<sup>2</sup> - 2y
-with initial condition = (0,1)
-where x range from 0 to 3 with a step 0.5
+<p style="padding-left:3em;">
+y' =  x<sup>2</sup> - 2y <br>
+with initial condition = (0,1)<br>
+where x ranges from 0 to 3 with a step 0.5
+</p>
 
 The tables printed are:
 - Euler's Method table
