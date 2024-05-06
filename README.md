@@ -31,15 +31,13 @@ This is a project to solve Ordinary differential equations using numerical metho
 	- `precision` : the number of decimal digits in numbers
 	---	
 2. Run the code and look at the tables for the three methods printed in your terminal.
-
+---
 ##			Example
 
 for the following problem
-<p style="padding-left:3em;">
-y' =  x<sup>2</sup> - 2y <br>
-with initial condition = (0,1)<br>
-where x ranges from 0 to 3 with a step 0.5
-</p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y' =  x<sup>2</sup> - 2y
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with initial condition = (0,1)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;where x ranges from 0 to 3 with a step 0.5
 
 The tables printed are:
 - Euler's Method table
