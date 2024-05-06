@@ -18,7 +18,7 @@ x_stop = 0.5   # the stopping x (it is not included)
 
 precision = 4   # precision of decimal digits
 
-headers = ['n', 'x', 'y', 'k1', 'x+h', 'y+h*k1', 'k2', 'yn+1',]
+headers = ['n', 'x', 'y', 'k', 'yn+1',]
 max_length_table = []
 data = []
 
@@ -26,13 +26,10 @@ k = ydash(x,y)
 n = 1
 for i in frange(x_start,x_stop,h):
     x = round(i,precision)
-    xn1 = round(i+h,precision)
-    k1 = round(ydash(x,y),precision)
-    yn11 = round(y+k1*h,precision)
-    k2 = round(ydash(xn1,yn11),precision)
-    ynplus1 = round(y + (h/2)*(k1+k2),precision)
+    k = round(ydash(x,y),precision)
+    ynplus1 = round(y+k*h,precision)
 
-    arr = [n,x,y,k1,xn1,yn11,k2,ynplus1]
+    arr = [n,x,y,k,ynplus1]
     data.append(arr)
 
     y = ynplus1
