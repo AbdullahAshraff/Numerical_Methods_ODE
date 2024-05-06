@@ -1,5 +1,5 @@
 """
-This module uses Heun's Method to solve ordinary differential equations, given an initial condition
+This module has some simple functions that are needed in the project
 """
 from itertools import count, takewhile
 from tabulate import tabulate
@@ -10,5 +10,6 @@ def print_table(headers:list,data:list):
 
 
 def frange(start, stop, step):
-    """ this function used the same the built-in function range() but for FLOAT NUMBERS."""
+    """for FLOAT NUMBERS, it is used the same as the built-in function range().
+    Return an object that produces a sequence from start (inclusive) to stop (exclusive) by step."""
     return takewhile(lambda x: x< stop, count(start, step))

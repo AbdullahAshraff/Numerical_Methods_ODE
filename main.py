@@ -1,29 +1,32 @@
 """
 This is the main module
 """
-from ODEProblem import *
-from math import sin,cos
+from math import sin
+from problem_and_methods import ODEProblem
 
-# the y dash function
-ydash = lambda x,y : (sin(x)**3)*y
+if __name__ == '__main__':
+    #################### user input here ######################
 
-# initial condition
-x = 0
-y = 1
+    # the y dash function
+    ydash = lambda x,y : (sin(x)**3)*y
 
-h = 0.1  # step
+    initial_point = (0,1) # initial condition
 
-x_start = 0    # the starting x
-x_stop = 0.5   # the stopping x (it is not included)
+    h = 0.1  # step
 
-precision = 5   # precision of decimal digits
+    x_start = 0    # the starting x (inclusive)
+    x_stop = 0.5   # the stopping x (exclusive)
 
+    precision = 5   # precision of decimal digits
 
-p = ODEProblem(ydash,x,y,h,x_start,x_stop,precision)
+    ###########################################################
 
-print('\n' + '#'*7 + " Euler's Method " + '#'*7)
-p.eulers_method()
-print('\n' + '#'*6 + " Midpoint Method " + '#'*7)
-p.midpoint_method()
-print('\n' + '#'*7 + " Heun's Method " + '#'*8)
-p.heuns_method()
+    solve_range = {'start': x_start, 'stop': x_stop, 'step': h}
+    p = ODEProblem(ydash,initial_point,solve_range,precision)
+
+    print('\n' + '#'*7 + " Euler's Method " + '#'*7)
+    p.eulers_method()
+    print('\n' + '#'*6 + " Midpoint Method " + '#'*7)
+    p.midpoint_method()
+    print('\n' + '#'*7 + " Heun's Method " + '#'*8)
+    p.heuns_method()
