@@ -1,7 +1,7 @@
 """
-This module uses Heun's Method to solve ordinary differential equations, given an initial condition
+This is the main module
 """
-from midpoint_method import *
+from ODEProblem import *
 from math import sin,cos
 
 # the y dash function
@@ -18,4 +18,15 @@ x_stop = 0.5   # the stopping x (it is not included)
 
 precision = 5   # precision of decimal digits
 
-midpoint_method(ydash,x,y,h,x_start,x_stop,precision)
+
+p = ODEProblem(ydash,x,y,h,x_start,x_stop,precision)
+print('#'*5 + "Euler's Method" + '#'*5)
+p.eulers_method()
+print()
+print('#'*20)
+print('#'*5 + "midpoint Method" + '#'*5)
+p.midpoint_method()
+print()
+print('#'*20)
+print('#'*5 + "heun's Method" + '#'*5)
+p.heuns_method()

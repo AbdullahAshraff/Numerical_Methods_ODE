@@ -16,13 +16,11 @@ h = 0.1  # step
 x_start = 0    # the starting x
 x_stop = 0.5   # the stopping x (it is not included)
 
-precision = 4   # precision of decimal digits
+precision = 5   # precision of decimal digits
 
 headers = ['n', 'x', 'y', 'k1', 'x+h', 'y+h*k1', 'k2', 'yn+1',]
-max_length_table = []
 data = []
 
-k = ydash(x,y)
 n = 1
 for i in frange(x_start,x_stop,h):
     x = round(i,precision)
