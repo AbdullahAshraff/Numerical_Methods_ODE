@@ -34,7 +34,8 @@ This is a project to solve Ordinary differential equations using numerical metho
 ---
 ##			Example
 
-for the following problem
+for the following problem:
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y' =  x<sup>2</sup> - 2y
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with initial condition = (0,1)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;where x ranges from 0 to 3 with a step 0.5
