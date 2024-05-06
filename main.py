@@ -5,7 +5,7 @@ from math import sin
 from problem_and_methods import ODEProblem
 
 if __name__ == '__main__':
-    #################### user input here ######################
+    ############## user input here #############
 
     # the y dash function
     ydash = lambda x,y : (sin(x)**3)*y
@@ -19,7 +19,7 @@ if __name__ == '__main__':
 
     precision = 5   # precision of decimal digits
 
-    ###########################################################
+    #############################################
 
     solve_range = {'start': x_start, 'stop': x_stop, 'step': h}
     p = ODEProblem(ydash,initial_point,solve_range,precision)
