@@ -9,13 +9,12 @@ if __name__ == '__main__':
 
     # the y dash function
     ydash = lambda x,y : (sin(x)**3)*y
-
     initial_point = (0,1) # initial condition
 
-    h = 0.1  # step
 
-    x_start = 0    # the starting x (inclusive)
-    x_stop = 0.5   # the stopping x (exclusive)
+    x_start = 0    # where x starts (inclusive)
+    x_stop = 0.5   # where x stops (exclusive)
+    h = 0.1  # step
 
     precision = 5   # precision of decimal digits
 
