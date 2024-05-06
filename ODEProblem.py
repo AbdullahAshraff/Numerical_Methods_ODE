@@ -59,6 +59,7 @@ class ODEProblem:
             n += 1
 
         print_table(headers,data)
+    
     def eulers_method(self):
         headers = ['n', 'x', 'y', 'k', 'yn+1',]
         data = []

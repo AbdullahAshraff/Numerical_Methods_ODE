@@ -20,13 +20,10 @@ precision = 5   # precision of decimal digits
 
 
 p = ODEProblem(ydash,x,y,h,x_start,x_stop,precision)
-print('#'*5 + "Euler's Method" + '#'*5)
+
+print('\n' + '#'*7 + " Euler's Method " + '#'*7)
 p.eulers_method()
-print()
-print('#'*20)
-print('#'*5 + "midpoint Method" + '#'*5)
+print('\n' + '#'*6 + " Midpoint Method " + '#'*7)
 p.midpoint_method()
-print()
-print('#'*20)
-print('#'*5 + "heun's Method" + '#'*5)
+print('\n' + '#'*7 + " Heun's Method " + '#'*8)
 p.heuns_method()
