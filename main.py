@@ -9,14 +9,14 @@ if __name__ == '__main__':
 
     # the y dash function
     ydash = lambda x,y : x**2-2*y
-    
-    initial_point = (0,1) # initial condition
+
+    initial_point = (0,1)   # initial condition
 
     x_start = 0    # where x starts (inclusive)
     x_stop = 3     # where x stops (exclusive)
-    h = 0.5  # step
+    h = 0.5        # step
 
-    precision = 5   # precision of decimal digits
+    precision = 5  # precision of decimal digits
 
     #############################################
 

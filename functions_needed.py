@@ -6,7 +6,7 @@ from tabulate import tabulate
 
 def print_table(headers:list,data:list):
     """ print table using tabulate function."""
-    print(tabulate(headers=headers,tabular_data=data))
+    print(tabulate(headers=headers,tabular_data=data,tablefmt="rounded_outline"))
 
 
 def frange(start, stop, step):
